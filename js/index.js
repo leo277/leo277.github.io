@@ -295,8 +295,8 @@ function reveal() {
 
   var ifrm = document.createElement("iframe");
   ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
-  //ifrm.style.width = `${w}px`;
-  //ifrm.style.height = `${h}px`;
+  ifrm.style.width = `100%`;
+  ifrm.style.height = `500px`;
   ifrm.style.border = 'none';
   document.querySelector('#video').appendChild(ifrm);
 }
