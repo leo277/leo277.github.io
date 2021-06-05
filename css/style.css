@@ -430,7 +430,7 @@ div#sea {
   }
 
   .icons .row span {
-    font-size: 56px;
+    font-size: 100px;
   }
 
   #people {
@@ -464,7 +464,7 @@ div#sea {
         width: 700px;
         position: relative;
         padding-bottom: 56.25%;
-        padding-top: 25px;
+        padding-top: 40%;
         height: 0;
         margin: 0 auto;
         max-width: 100%;
