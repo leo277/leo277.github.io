@@ -6,6 +6,7 @@ html, body, .container {
 
 body {
   background: #e74;
+  height: 100vh;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #190e14, #0d0d4b 30%, #c76075 80%, #e9b64b 95%);
   background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
@@ -462,11 +463,17 @@ div#sea {
         float: none;
         clear: both;
         width: 700px;
-        position: relative;
-        /*padding-bottom: 60%;*/
-        padding-top: 100px;
+        position: absolute;
+        top: 20%;
+        text-align:  center;
+        /*padding-bottom: 40%;*/
+        /*padding-top: 40%;*/
         height: 0;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
+        left: 50%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -350px;
         max-width: 100%;
 }
 
