@@ -293,11 +293,25 @@ function reveal() {
     w = 255;h = 155;
   }
 
-  var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
-  ifrm.style.width = `100%`;
-  ifrm.style.height = `500px`;
-  ifrm.style.border = 'none';
-  document.querySelector('#video').appendChild(ifrm);
+  // var ifrm = document.createElement("iframe");
+  // ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
+  // ifrm.style.width = `100%`;
+  // ifrm.style.height = `500px`;
+  // ifrm.style.border = 'none';
+  // document.querySelector('#video').appendChild(ifrm);
+
+  var videoelement = document.createElement("video");
+  videoelement.setAttribute("id", "video1");
+
+  var sourceMP4 = document.createElement("source"); 
+  sourceMP4.type = "video/mp4";
+  sourceMP4.src = "bd.mp4";
+  videoelement.appendChild(sourceMP4);
+  document.querySelector('#video').appendChild(videoelement);
+
+  // $('.video-label').html(videoelement);
+  var video = document.getElementById("video1");
+  video.play();
+
 }
 
